@@ -19,12 +19,12 @@ public class MainMethod {
 
         Bookstore list = new Bookstore("The book cafe", "840 providence road");
         System.out.printf(list.toString());
-        // System.out.println("Would you like to check our book selection?");
-        // String check = scan.next();
-        // if (check.equalsIgnoreCase("yes")) {
-        // System.out.println(list.titles(check));
-        // }
-        list.titles2();
+        System.out.println("\nWould you like to check our book selection?");
+        String check = scan.next();
+        if (check.equalsIgnoreCase("yes")) {
+            list.titles2();
+        }
+
         scan.close();
 
     }
